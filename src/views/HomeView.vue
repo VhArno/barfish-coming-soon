@@ -71,18 +71,20 @@ const submitEmailAddress = async () => {
     </div>
 
     <div class="contact">
-      <h2>Wil je niets missen?</h2>
-      <p>
-        Laat je e-mailadres achter en blijf op de hoogte van onze opening en het laatste nieuws!
-      </p>
+      <div class="contact-text">
+        <h2>Wil je niets missen?</h2>
+        <p>
+          Laat je e-mailadres achter en blijf op de hoogte van onze opening en het laatste nieuws!
+        </p>
 
-      <form @submit.prevent="submitEmailAddress">
-        <AppInput class="input" label="Email adress" type="email" autocomplete="email"></AppInput>
+        <form @submit.prevent="submitEmailAddress">
+          <AppInput class="input" label="Email adress" type="email" autocomplete="email"></AppInput>
 
-        <AppButton>Verstuur</AppButton>
-      </form>
+          <AppButton>Verstuur</AppButton>
+        </form>
 
-      <h3>We kijken ernaar uit om je vanaf maart te verwelkomen bij BAR FISH!</h3>
+        <h3>We kijken ernaar uit om je vanaf maart te verwelkomen bij BAR FISH!</h3>
+      </div>
     </div>
   </section>
 </template>
@@ -98,6 +100,8 @@ const submitEmailAddress = async () => {
     min-height: 40rem;
     display: flex;
     align-items: center;
+    border-radius: 50px;
+    margin: 1rem;
 
     &::before {
       content: '';
@@ -108,6 +112,7 @@ const submitEmailAddress = async () => {
       height: 100%;
       background: rgba(19, 9, 0, 0.521);
       z-index: 1;
+      border-radius: 50px;
     }
 
     .intro-text {
@@ -155,8 +160,18 @@ const submitEmailAddress = async () => {
     text-align: center;
     padding: 2rem;
     background-color: var(--accent2);
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+    transform: rotate(2deg);
+
+    .contact-text {
+      transform: rotate(-2deg);
+    }
 
     form {
+      flex: 1;
       margin-top: 3rem;
 
       .input {
@@ -174,6 +189,13 @@ const submitEmailAddress = async () => {
 @media (max-width: 48rem) {
   .container {
     .intro {
+      margin: 0rem;
+      border-radius: 0px;
+
+      &::before {
+        border-radius: 0px;
+      }
+
       .intro-text {
         width: 85%;
         margin: 1rem auto;
@@ -189,7 +211,7 @@ const submitEmailAddress = async () => {
 
         .countdown-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(7, 1fr);
           gap: 1rem;
           justify-content: center;
           align-items: center;
@@ -197,6 +219,8 @@ const submitEmailAddress = async () => {
         }
 
         .countdown-item {
+          width: 30%;
+
           h3 {
             font-size: 2rem;
             margin: 1rem 0;
@@ -213,12 +237,18 @@ const submitEmailAddress = async () => {
       text-align: center;
       padding: 2rem;
       background-color: var(--accent2);
+      transform: rotate(0deg);
+      width: 70%;
+
+      .contact-text {
+        transform: rotate(0deg);
+      }
 
       form {
         margin-top: 3rem;
 
         .input {
-          width: 60%;
+          width: 100%;
           margin: auto;
         }
 

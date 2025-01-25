@@ -6,13 +6,14 @@
   --text-color-light: #ffff;
   --btn-color: #646464;
   --accent: #042283;
-  --accent2: #5e3a00;
+  --accent2: #6e3500;
 }
 
 body {
   margin: 0;
   font-family: 'Lato', serif;
   color: var(--text-color-light);
+  background-color: var(--footer-bg);
 }
 
 h1,

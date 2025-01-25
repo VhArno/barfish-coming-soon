@@ -5,36 +5,43 @@
     <ul class="footer-list">
       <li>
         <div>
-            <p>Volg ons op sociale media!</p>
-            <p class="long">Neem een kijkje achter de schermen en blijf op de hoogte.</p>
+          <p>Volg ons op sociale media!</p>
+          <p class="long">Neem een kijkje achter de schermen en blijf op de hoogte.</p>
 
+          <div class="social-btns">
+            <a
+              href="https://www.instagram.com/barfish.nl/"
+              target="_blank"
+              aria-label="Our instagram"
+            >
+              <img src="/src/assets/insta-logo.svg" alt="instagram" />
+            </a>
 
-            <div class="social-btns">
-                <a href="https://www.instagram.com/barfish.nl/" target="_blank" aria-label="Our instagram">
-                    <img src="/src/assets/insta-logo.svg" alt="instagram" />
-                </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61572364054383"
+              target="_blank"
+              aria-label="Our facebok"
+            >
+              <img src="/src/assets/facebook-logo.svg" alt="facebook" />
+            </a>
 
-                <a href="https://www.facebook.com/profile.php?id=61572364054383" target="_blank" aria-label="Our facebok">
-                    <img src="/src/assets/facebook-logo.svg" alt="facebook" />
-                </a>
-
-                <a href="https://tiktok.com" target="_blank" aria-label="Our tiktok">
-                    <img src="/src/assets/tiktok-log.svg" alt="tiktok" />
-                </a>
-            </div>
+            <a href="https://tiktok.com" target="_blank" aria-label="Our tiktok">
+              <img src="/src/assets/tiktok-log.svg" alt="tiktok" />
+            </a>
+          </div>
         </div>
       </li>
       <li>
         <div>
-            <p>Bar Fish</p>
-            <p>Kamperland</p>
+          <p>Bar Fish</p>
+          <p>Kamperland</p>
         </div>
       </li>
       <li>
         <div>
-            <p>Telefoonnummer: <span class="text-light">+31 58 648 4862</span></p>
-            <p>Email: <span class="text-light">info@leforel.nl</span></p>
-            <!--<p>Openingstijden: <span class="text-light">MA - ZO 18:00</span></p>-->
+          <p>Telefoonnummer: <span class="text-light">+31 58 648 4862</span></p>
+          <p>Email: <span class="text-light">info@leforel.nl</span></p>
+          <!--<p>Openingstijden: <span class="text-light">MA - ZO 18:00</span></p>-->
         </div>
       </li>
     </ul>
@@ -46,12 +53,11 @@
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  align-items: center;
   list-style-type: none;
   text-transform: uppercase;
   background-color: var(--footer-bg);
   color: var(--text-color-light);
-  margin: 0;
+  margin: 0 1rem;
   padding: 3rem 0;
 
   .long {
@@ -90,7 +96,7 @@
     flex: 1;
 
     > div {
-        margin: auto;
+      margin: auto;
     }
 
     .text-light {
