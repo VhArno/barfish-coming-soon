@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --main-bg: #eeeeee;
+  --footer-bg: #242424;
+  --text-color-light: #ffff;
+  --btn-color: #646464;
+  --accent: #042283;
+  --accent2: #5e3a00;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', serif;
+  color: var(--text-color-light);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
