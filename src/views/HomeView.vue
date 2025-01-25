@@ -130,12 +130,12 @@ const submitEmailAddress = async () => {
 
       p {
         font-size: 1.1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
       }
 
       .countdown-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 0fr);
+        display: flex;
+        flex-flow: row;
         gap: 1rem;
         align-items: center;
       }
@@ -164,10 +164,10 @@ const submitEmailAddress = async () => {
     margin: auto;
     margin-top: 3rem;
     border-radius: 10px;
-    transform: rotate(2deg);
+    transform: rotate(1deg);
 
     .contact-text {
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
     }
 
     form {
@@ -200,29 +200,18 @@ const submitEmailAddress = async () => {
         width: 85%;
         margin: 1rem auto;
 
-        h1 {
-          font-size: 3rem;
-        }
-
-        p {
-          font-size: 1.1rem;
-          margin-bottom: 0.5rem;
-        }
-
         .countdown-grid {
-          display: grid;
-          grid-template-columns: repeat(7, 1fr);
-          gap: 1rem;
-          justify-content: center;
-          align-items: center;
-          margin: 1.5rem 0;
+          display: flex;
+          flex-flow: row wrap;
         }
 
         .countdown-item {
           width: 30%;
+          text-align: center;
+          margin: 0;
 
           h3 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin: 1rem 0;
           }
 
